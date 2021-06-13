@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_books_tab_item_two_image"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/main_screen_book_tab_collection_item_height"
+    android:scaleType="centerCrop"
+    android:src="@mipmap/books_small"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />

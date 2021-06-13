@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/my_shelf_created_card"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/my_books_screen_shelf_card_height"
+    app:cardCornerRadius="@dimen/my_books_screen_corners_radius">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/TextView.Black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_margin="@dimen/my_books_screen_margin_normal"
+        android:text="@string/my_books_screen_my_shelves"
+        android:textSize="@dimen/my_books_screen_text_size_small" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/my_shelf_created_text"
+        style="@style/TextView.Brown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_margin="@dimen/my_books_screen_margin_normal"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/my_books_screen_all_shelves" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/my_books_screen_nested_shelf_card_width"
+        android:layout_height="@dimen/my_books_screen_nested_shelf_card_height"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="@dimen/my_books_screen_margin_normal"
+        android:layout_marginBottom="@dimen/my_books_screen_margin_large"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardCornerRadius="@dimen/my_books_screen_corners_radius">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/TextView.Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:padding="@dimen/my_books_screen_text_padding"
+            android:text="@string/my_books_screen_top_tag" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:padding="@dimen/my_books_screen_text_padding"
+            android:text="@string/my_books_screen_no_shelf"
+            android:textSize="@dimen/my_books_screen_text_size_small" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.cardview.widget.CardView>

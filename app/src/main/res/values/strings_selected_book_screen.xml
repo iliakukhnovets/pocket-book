@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="selected_book_screen_screen_read">Читать</string>
+    <string name="selected_book_screen_finished_read_status">Прочитал</string>
+    <string name="selected_book_screen_read_status">Читаю</string>
+    <string name="selected_book_screen_want_to_read_status">Хочу прочитать</string>
+    <string name="selected_book_screen_appreciate_book">Оцените книгу</string>
+    <string name="selected_book_screen_premium_text">Доступ к книгам и аудиозаписям в одной подписке</string>
+    <string name="selected_book_screen_premium_free_period">Первые 14 дней бесплатно</string>
+    <string name="selected_book_screen_about_book">О книге</string>
+    <string name="selected_book_screen_language">Язык</string>
+    <string name="selected_book_screen_related_books">Похожие книги</string>
+    <string name="selected_book_screen_related_series">Входит в серию</string>
+    <string name="selected_book_screen_printed_pages">печатных страниц</string>
+    <string name="selected_book_screen_interesting_facts">Интересные факты</string>
+</resources>

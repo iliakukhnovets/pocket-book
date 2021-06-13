@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="search_screen_edit_text_hint">книга, аудиокнига или автор</string>
+    <string name="search_screen_tag">Поиск</string>
+    <string name="search_screen_styles">Жанры</string>
+    <string name="search_screen_top_request">Популярные запросы</string>
+    <string name="search_screen_adventures">Приключения</string>
+    <string name="search_screen_novel">Роман</string>
+    <string name="search_screen_history">История</string>
+    <string name="search_screen_utopia">Утопия</string>
+    <string name="search_screen_foreign">Зарубежная литература</string>
+    <string name="search_screen_audio_books">Аудиокниги</string>
+    <string name="search_screen_free_books">Бесплатные книги</string>
+    <string name="search_screen_podcasts">Подкасты</string>
+    <string name="search_screen_read_and_write">Читай и слушай</string>
+    <string name="search_screen_books">книг</string>
+    <string name="search_screen_popular_request_1">Популярный запрос № 1</string>
+    <string name="search_screen_popular_request_2">Популярный запрос № 2</string>
+    <string name="search_screen_popular_request_3">Популярный запрос № 3</string>
+</resources>

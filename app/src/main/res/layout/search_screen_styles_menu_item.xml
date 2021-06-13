@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/search_screen_margin_small"
+    app:cardCornerRadius="@dimen/search_screen_corners_radius">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/search_screen_books_item_tag"
+            style="@style/TextView.Black"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/search_screen_margin_normal"
+            android:layout_marginEnd="@dimen/search_screen_margin_small"
+            android:textSize="@dimen/search_screen_text_size_normal"
+            app:layout_constraintEnd_toStartOf="@+id/search_screen_books_item_image"
+            app:layout_constraintHorizontal_bias="0.038"
+            app:layout_constraintStart_toStartOf="@+id/search_screen_books_count"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/search_screen_books_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.038"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.877" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/search_screen_book_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/search_screen_books"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.015"
+            app:layout_constraintStart_toEndOf="@+id/search_screen_books_count"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.877" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/search_screen_books_item_image"
+            android:layout_width="@dimen/search_screen_image_width"
+            android:layout_height="@dimen/search_screen_image_height"
+            android:layout_marginTop="@dimen/search_screen_margin_small"
+            android:layout_marginEnd="@dimen/search_screen_margin_normal"
+            android:layout_marginBottom="@dimen/search_screen_margin_small"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

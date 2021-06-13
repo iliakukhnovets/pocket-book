@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="my_profile_screen_books_tag">Прочитано</string>
+    <string name="my_profile_screen_email">Имя вашей почты</string>
+    <string name="my_profile_screen_reading_speed">Скорость чтения</string>
+    <string name="my_profile_screen_elapsed_reading_time">Времени за чтением</string>
+    <string name="my_profile_screen_bottom_img_text">Читайте и отслеживайте свои успехи!</string>
+    <string name="my_profile_screen_buy_subscribe">Купить подписку</string>
+    <string name="my_profile_screen_for_month">за месяц</string>
+    <string name="my_profile_screen_for_week">за неделю</string>
+    <string name="my_profile_screen_for_year">за год</string>
+    <string name="my_profile_screen_read_statistic">Статистика чтения</string>
+    <string name="my_profile_screen_settings">Настройки</string>
+    <string name="my_profile_screen_time_statistic">Статистика по времени</string>
+</resources>

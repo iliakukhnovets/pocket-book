@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/my_books_status_item"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/my_books_screen_menu_height"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="horizontal">
+    <!-- TODO продумать макет-->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/my_books_want_to_read"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:text="@string/my_books_screen_want_to_read"
+            android:textAllCaps="false"
+            android:textSize="@dimen/my_books_screen_text_size_normal"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/my_books_want_read_count"
+            style="@style/TextView.Brown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/my_books_screen_margin_small"
+            android:layout_weight="0"
+            android:gravity="center"
+            android:text="@string/my_books_screen_zero_count"
+            android:textSize="@dimen/my_books_screen_text_size_normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.cardview.widget.CardView>

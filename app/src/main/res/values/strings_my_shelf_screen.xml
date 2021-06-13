@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="my_shelf_screen_about_shelf">О полке</string>
+    <string name="my_shelf_screen_load_poster">Загрузить обложку</string>
+    <string name="my_shelf_screen_shelf_description">Опишите, о чем эта полка</string>
+    <string name="my_shelf_screen_name">Название полки</string>
+    <string name="my_shelf_screen_show_every_body">Показать всем</string>
+    <string name="my_shelf_screen_show_every_body_text">Вашу полку смогут увидеть другие читатели</string>
+    <string name="my_shelf_screen_toolbar_ready">ГОТОВО</string>
+</resources>

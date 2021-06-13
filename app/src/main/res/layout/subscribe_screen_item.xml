@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/appCompatTextView4"
+            style="@style/TextView.Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/subscribe_screen_margin_normal"
+            android:layout_marginTop="@dimen/subscribe_screen_margin_large"
+            android:text="@string/subscribe_screen_premium_subscribe"
+            android:textSize="@dimen/subscribe_screen_text_size_large"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/appCompatImageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/subscribe_screen_margin_large"
+            android:layout_marginEnd="@dimen/subscribe_screen_margin_normal"
+            android:src="@drawable/ic_my_books_info_premium_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.805"
+            app:layout_constraintStart_toEndOf="@+id/appCompatTextView4"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/subscribe_screen_recycler_screen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/subscribe_screen_margin_normal"
+            android:layout_marginTop="@dimen/subscribe_screen_margin_normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appCompatTextView4" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/TextView.White"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/subscribe_screen_margin_normal"
+            android:layout_marginTop="@dimen/subscribe_screen_margin_normal"
+            android:background="@drawable/round_corners_10dp"
+            android:backgroundTint="@color/orange"
+            android:text="@string/subscribe_screen_trial_fourteen_days"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/subscribe_screen_recycler_screen" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/subscribe_one_year_btn"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/subscribe_screen_margin_normal"
+        android:background="@drawable/round_corners_10dp"
+        android:backgroundTint="@color/blue"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subscribe_one_month_btn">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/TextView.White"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/subscribe_screen_margin_normal"
+            android:layout_weight="1"
+            android:text="@string/subscribe_screen_trial_one_year"
+            android:textAlignment="viewStart" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/TextView.White"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/subscribe_screen_margin_normal"
+            android:layout_weight="1"
+            android:text="@string/subscribe_screen_trial_1_year_price"
+            android:textAlignment="viewEnd" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/subscribe_one_month_btn"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/subscribe_screen_margin_normal"
+        android:background="@drawable/round_corners_10dp"
+        android:backgroundTint="@color/blue"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/TextView.White"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/subscribe_screen_margin_normal"
+            android:layout_weight="1"
+            android:text="@string/subscribe_screen_trial_one_month"
+            android:textAlignment="viewStart" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/TextView.White"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/subscribe_screen_margin_normal"
+            android:layout_weight="1"
+            android:text="@string/subscribe_screen_trial_1_month_price"
+            android:textAlignment="viewEnd" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:padding="@dimen/subscribe_screen_margin_normal"
+        android:text="@string/book_author_subscribe_btn_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subscribe_one_year_btn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

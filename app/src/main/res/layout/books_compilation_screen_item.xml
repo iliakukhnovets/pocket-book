@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_activity_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/image_activity_progress_bar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/books_compilation_screen_progress_bar_height"
+        android:layout_marginStart="@dimen/books_compilation_screen_normal_margin"
+        android:layout_marginTop="@dimen/books_compilation_screen_extra_big_margin"
+        android:layout_marginEnd="@dimen/books_compilation_screen_normal_margin"
+        android:backgroundTint="@color/grey"
+        android:progressBackgroundTint="@color/grey"
+        android:progressTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/image_activity_gradient"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/books_compilation_screen_shadow_view_height"
+        android:layout_gravity="bottom"
+        android:background="@drawable/grey_gradient"
+        app:layout_constraintBottom_toBottomOf="@+id/image_activity_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/image_screen_close_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_image_activity_close_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.976"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_activity_progress_bar"
+        app:layout_constraintVertical_bias="0.016" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/image_activity_text_tag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/books_compilation_screen_normal_margin"
+        android:layout_marginEnd="@dimen/books_compilation_screen_normal_margin"
+        android:layout_marginBottom="@dimen/books_compilation_screen_big_margin"
+        android:textColor="@color/white"
+        android:textSize="@dimen/books_compilation_screen_text_size_big"
+        app:layout_constraintBottom_toTopOf="@+id/image_activity_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/image_activity_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/books_compilation_screen_normal_margin"
+        android:layout_marginEnd="@dimen/books_compilation_screen_normal_margin"
+        android:layout_marginBottom="@dimen/books_compilation_screen_big_margin"
+        android:textColor="@color/white"
+        android:textSize="@dimen/books_compilation_screen_text_size_normal"
+        app:layout_constraintBottom_toTopOf="@+id/image_screen_action_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/image_screen_action_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/books_compilation_screen_button_height"
+        android:layout_marginStart="@dimen/books_compilation_screen_normal_margin"
+        android:layout_marginEnd="@dimen/books_compilation_screen_normal_margin"
+        android:layout_marginBottom="@dimen/books_compilation_screen_extra_big_margin"
+        android:background="@drawable/round_corners_10dp"
+        android:backgroundTint="@color/yellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

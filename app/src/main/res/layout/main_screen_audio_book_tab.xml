@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_margin="@dimen/main_screen_normal_margin"
+    app:cardCornerRadius="@dimen/main_screen_corners_radius">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/orange_gradient">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/audio_book_tab_user_image"
+            android:layout_width="@dimen/main_screen_tab_avatar_width"
+            android:layout_height="@dimen/main_screen_tab_avatar_height"
+            android:layout_marginStart="@dimen/main_screen_big_margin"
+            android:layout_marginTop="@dimen/main_screen_big_margin"
+            android:background="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/TextView.Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/main_screen_extra_big_margin"
+            android:text="@string/main_screen_books_tab_recommendations"
+            android:textSize="@dimen/main_screen_big_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.127"
+            app:layout_constraintStart_toEndOf="@+id/audio_book_tab_user_image"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/audio_book_tab_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_screen_audio_tab_recycler_view_height"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

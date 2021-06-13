@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="selected_book_screen_text_size_large">24sp</dimen>
+    <dimen name="selected_book_screen_text_size_normal">17sp</dimen>
+    <dimen name="selected_book_screen_text_size_small">15sp</dimen>
+    <dimen name="selected_book_screen_margin_small">5dp</dimen>
+    <dimen name="selected_book_screen_margin_normal">10dp</dimen>
+    <dimen name="selected_book_screen_top_image_height">220dp</dimen>
+    <dimen name="selected_book_screen_book_image_height">230dp</dimen>
+    <dimen name="selected_book_screen_book_image_width">170dp</dimen>
+    <dimen name="selected_book_screen_subscribe_button_height">30dp</dimen>
+    <dimen name="selected_book_screen_corners_radius">10dp</dimen>
+    <dimen name="selected_book_screen_rating_bar_height">50dp</dimen>
+    <dimen name="selected_book_screen_padding">5dp</dimen>
+    <dimen name="selected_book_screen_related_book_item_width">120dp</dimen>
+    <dimen name="selected_book_screen_related_book_item_height">180dp</dimen>
+</resources>

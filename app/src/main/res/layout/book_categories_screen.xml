@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_haze">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/books_categories_screen_app_bar_height"
+            android:backgroundTint="@color/black_haze"
+            android:fitsSystemWindows="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fitsSystemWindows="true"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/search_screen_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@color/black_haze"
+                    app:layout_scrollFlags="scroll|enterAlways"
+                    app:navigationIcon="@drawable/ic_back_brown_24">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/books_categories_toolbar_tag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:visibility="gone" />
+
+                </androidx.appcompat.widget.Toolbar>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/books_categories_screen_app_bar_height"
+                    app:layout_collapseMode="parallax">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/books_categories_tag"
+                        style="@style/TextView.Black"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/books_categories_screen_margin_large"
+                        android:layout_marginEnd="@dimen/books_categories_screen_margin_small"
+                        android:layout_marginBottom="@dimen/books_categories_screen_margin_extra_large"
+                        android:textSize="@dimen/books_categories_screen_text_size_large"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/books_categories_image"
+                        app:layout_constraintHorizontal_bias="0.012"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/books_categories_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="@dimen/books_categories_screen_margin_large"
+                        android:layout_marginTop="@dimen/books_categories_screen_margin_small"
+                        android:gravity="start"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/books_categories_tag" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/appCompatTextView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/books_categories_screen_margin_extra_small"
+                        android:text="@string/book_categories_screen_books"
+                        app:layout_constraintBottom_toBottomOf="@+id/books_categories_count"
+                        app:layout_constraintStart_toEndOf="@+id/books_categories_count" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/books_categories_image"
+                        android:layout_width="@dimen/books_categories_image_width"
+                        android:layout_height="@dimen/books_categories_image_height"
+                        android:layout_marginEnd="@dimen/books_categories_screen_margin_large"
+                        android:layout_marginBottom="@dimen/books_categories_screen_margin_large"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/books_categories_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/books_categories_screen_margin_normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

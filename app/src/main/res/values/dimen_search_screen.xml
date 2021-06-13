@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="search_screen_app_bar_height">120dp</dimen>
+    <dimen name="search_screen_tool_bar_height">35dp</dimen>
+    <dimen name="search_screen_margin_small">5dp</dimen>
+    <dimen name="search_screen_margin_normal">10dp</dimen>
+    <dimen name="search_screen_margin_large">20dp</dimen>
+    <dimen name="search_screen_image_height">90dp</dimen>
+    <dimen name="search_screen_image_width">90dp</dimen>
+    <dimen name="search_screen_corners_radius">10dp</dimen>
+    <dimen name="search_screen_text_size_small">15sp</dimen>
+    <dimen name="search_screen_text_size_extra_small">13sp</dimen>
+    <dimen name="search_screen_text_size_normal">17sp</dimen>
+    <dimen name="search_screen_text_size_large">25sp</dimen>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_bottom_item_btn"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/main_screen_bottom_item_height"
+    android:background="@color/light_black"
+    android:padding="@dimen/main_screen_bottom_item_padding"
+    android:textAllCaps="false"
+    android:textColor="@color/white" />

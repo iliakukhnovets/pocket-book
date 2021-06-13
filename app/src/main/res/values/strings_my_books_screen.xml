@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="my_books_screen_all_shelves">Все</string>
+    <string name="my_books_screen_available_offline">Доступны оффлайн</string>
+    <string name="my_books_screen_create_shelf">Создать полку</string>
+    <string name="my_books_screen_finished_read">Прочитал</string>
+    <string name="my_books_screen_want_to_read">Хочу прочитать</string>
+    <string name="my_books_screen_read">Читаю</string>
+    <string name="my_books_screen_top_tag">Мои книги</string>
+    <string name="my_books_screen_zero_count">0</string>
+    <string name="my_books_screen_my_shelves">Мои полки</string>
+    <string name="my_books_screen_no_shelf">Нет книг/Видна всем</string>
+    <string name="my_books_screen_no_shelf_text">У вас  нет ни одной полки, самое время создать первую</string>
+</resources>

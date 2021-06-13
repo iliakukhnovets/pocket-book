@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="130dp"
+    android:layout_marginBottom="@dimen/book_author_screen_normal_margin"
+    android:layout_height="wrap_content">
+<!--TODO check how to delete contstraintlayout-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/book_author_related_book_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/book_author_screen_normal_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/book_author_related_book_image"
+            android:layout_width="@dimen/book_author_screen_image_width"
+            android:layout_height="@dimen/book_author_screen_image_height"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/book_author_related_author_name"
+        style="@style/TextView.Black"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/book_author_screen_small_margin"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/book_author_related_book_card"
+        app:layout_constraintStart_toStartOf="@+id/book_author_related_book_card"
+        app:layout_constraintTop_toBottomOf="@+id/book_author_related_book_card" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/book_author_related_author_books_count"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/book_author_screen_small_margin"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/book_author_related_book_card"
+        app:layout_constraintStart_toStartOf="@+id/book_author_related_book_card"
+        app:layout_constraintTop_toBottomOf="@+id/book_author_related_author_name" />
+</androidx.constraintlayout.widget.ConstraintLayout>

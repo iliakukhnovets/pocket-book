@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="splash_screen_margin_normal">10dp</dimen>
+    <dimen name="splash_screen_margin_large">24dp</dimen>
+    <dimen name="splash_screen_margin_extra_large">48dp</dimen>
+    <dimen name="splash_screen_text_size_large">24sp</dimen>
+    <dimen name="splash_screen_image_width">48dp</dimen>
+    <dimen name="splash_screen_image_height">48dp</dimen>
+    <dimen name="splash_screen_progress_bar_width">24dp</dimen>
+    <dimen name="splash_screen_progress_bar_height">24dp</dimen>
+    <dimen name="splash_screen_margin_bottom">150dp</dimen>
+</resources>

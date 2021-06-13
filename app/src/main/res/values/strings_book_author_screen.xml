@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="book_author_subscribe_to_updates">Подписаться на обновления</string>
+    <string name="book_author_subscribe_btn_description">Вы будете получать уведомление,
+        как только в каталоге появятся новые книги этого автора</string>
+    <string name="book_author_all_books">Все книги автора</string>
+    <string name="book_author_all_audio_books">Все аудиокниги автора</string>
+    <string name="book_author_related_authors">Похожие авторы</string>
+</resources>

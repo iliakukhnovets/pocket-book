@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="selected_category_spinner_strings">
+        <item>По популярности</item>
+        <item>По новизне</item>
+        <item>По количеству читателей</item>
+        <item>По оценке</item>
+    </string-array>
+</resources>

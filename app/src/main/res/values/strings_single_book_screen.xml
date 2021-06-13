@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="book_author_tag">Автор</string>
+    <string name="book_label">Название книги</string>
+    <string name="book_author_name">Имя автора</string>
+    <string name="book_status">Статус книги(читаю, прочитал и т.д.)</string>
+</resources>

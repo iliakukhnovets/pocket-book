@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="books_categories_screen_corners_radius">5dp</dimen>
+    <dimen name="books_categories_screen_margin_extra_small">4dp</dimen>
+    <dimen name="books_categories_screen_margin_small">8dp</dimen>
+    <dimen name="books_categories_screen_margin_normal">10dp</dimen>
+    <dimen name="books_categories_screen_margin_large">16dp</dimen>
+    <dimen name="books_categories_screen_margin_extra_large">32dp</dimen>
+    <dimen name="books_categories_image_height">60dp</dimen>
+    <dimen name="books_categories_image_width">60dp</dimen>
+    <dimen name="books_categories_screen_text_size_normal">17sp</dimen>
+    <dimen name="books_categories_screen_text_size_large">22sp</dimen>
+    <dimen name="books_categories_screen_app_bar_height">120dp</dimen>
+</resources>

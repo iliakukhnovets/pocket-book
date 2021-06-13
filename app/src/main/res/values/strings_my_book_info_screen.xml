@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="my_book_info_screen_premium">Премиум</string>
+    <string name="my_book_info_screen_default_rating">4,5</string>
+    <string name="my_book_info_screen_read_yet">Читаю</string>
+    <string name="my_book_info_screen_want_to_read">Хочу прочитать</string>
+    <string name="my_book_info_screen_read">Прочитал</string>
+</resources>

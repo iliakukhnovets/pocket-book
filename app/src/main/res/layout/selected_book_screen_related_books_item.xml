@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/black_haze">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/related_book_card"
+        android:layout_width="@dimen/selected_book_screen_related_book_item_width"
+        android:layout_height="@dimen/selected_book_screen_related_book_item_height"
+        android:layout_marginTop="@dimen/selected_book_screen_margin_small"
+        android:layout_marginEnd="@dimen/selected_book_screen_margin_small"
+        app:cardBackgroundColor="@color/black_haze"
+        app:cardCornerRadius="@dimen/selected_book_screen_corners_radius"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/related_book_image"
+            android:layout_width="@dimen/selected_book_screen_related_book_item_width"
+            android:layout_height="@dimen/selected_book_screen_related_book_item_height"
+            android:scaleType="centerCrop" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatRatingBar
+        android:id="@+id/related_book_rating"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/selected_book_screen_margin_small"
+        app:layout_constraintEnd_toEndOf="@+id/related_book_card"
+        app:layout_constraintStart_toStartOf="@+id/related_book_card"
+        app:layout_constraintTop_toBottomOf="@+id/related_book_card" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/related_book_name"
+        style="@style/TextView.Black"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/selected_book_screen_margin_small"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/related_book_card"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/related_book_card"
+        app:layout_constraintTop_toBottomOf="@+id/related_book_rating" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/related_book_author"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/selected_book_screen_margin_small"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/related_book_name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/related_book_name"
+        app:layout_constraintTop_toBottomOf="@+id/related_book_name" />
+</androidx.constraintlayout.widget.ConstraintLayout>

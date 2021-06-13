@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="splash_screen_initialization_of_components">Инициализация компонентов…</string>
+    <string name="splash_screen_application_name">Pocket Book</string>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="book_info_screen_margin_normal">10dp</dimen>
+    <dimen name="book_info_screen_margin_small">5dp</dimen>
+    <dimen name="book_info_screen_corners_radius">10dp</dimen>
+    <dimen name="book_info_screen_padding_text">3dp</dimen>
+    <dimen name="book_info_screen_margin_expanded_title">10dp</dimen>
+    <dimen name="book_info_screen_margin_expanded_sub_title">7dp</dimen>
+    <dimen name="book_info_screen_app_bar_height">120dp</dimen>
+    <dimen name="book_info_screen_text_size_small">15sp</dimen>
+    <dimen name="book_info_screen_text_size_normal">17sp</dimen>
+    <dimen name="book_info_screen_book_image_height">180dp</dimen>
+    <dimen name="book_info_screen_book_image_width">110dp</dimen>
+    <dimen name="book_info_screen_book_image_elevation">5dp</dimen>
+    <dimen name="book_info_screen_item_height">190dp</dimen>
+    <dimen name="book_info_screen_text_padding">3dp</dimen>
+    <dimen name="book_info_screen_buttons_margin_small">8dp</dimen>
+    <dimen name="book_info_screen_buttons_margin_normal">16dp</dimen>
+    <dimen name="book_info_screen_buttons_margin_big">24dp</dimen>
+    <dimen name="book_info_screen_buttons_height">24dp</dimen>
+    <dimen name="book_info_screen_padding_minimal">0dp</dimen>
+</resources>

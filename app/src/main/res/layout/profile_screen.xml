@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_haze">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/profile_screen_margin_normal"
+        android:layout_marginEnd="@dimen/profile_screen_margin_normal"
+        android:layout_marginBottom="@dimen/profile_screen_margin_normal"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/my_profile_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/my_profile_settings_btn"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_my_profile_settings_24"
+                    android:text="@string/my_profile_screen_settings"
+                    android:textColor="@color/brown"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/my_profile_user_image"
+            android:layout_width="@dimen/profile_screen_avatar_width"
+            android:layout_height="@dimen/profile_screen_avatar_height"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/profile_screen_margin_large"
+            android:scaleType="center" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/my_profile_user_mail"
+            style="@style/TextView.Brown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/profile_screen_margin_large"
+            android:text="@string/my_profile_screen_email"
+            android:textAlignment="center"
+            android:textSize="@dimen/profile_screen_text_size_large" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/my_profile_buy_subscribe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/profile_screen_margin_normal"
+            android:background="@drawable/round_corners_10dp"
+            android:backgroundTint="@color/yellow"
+            android:text="@string/my_profile_screen_buy_subscribe" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/TextView.Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/profile_screen_margin_large"
+            android:text="@string/my_profile_screen_read_statistic"
+            android:textSize="@dimen/profile_screen_text_size_normal" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/my_profile_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/profile_screen_margin_large" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/profile_screen_corners_radius">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/profile_screen_margin_normal"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextView.Black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/my_profile_screen_time_statistic"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/profile_screen_schedule_menu_height"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/my_profile_week_btn"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_rectangle_border"
+                        android:text="@string/my_profile_screen_for_week"
+                        android:textColor="@color/brown"
+                        android:textSize="@dimen/profile_screen_text_size_extra_small" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/my_profile_month_btn"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_rectangle_border"
+                        android:text="@string/my_profile_screen_for_month"
+                        android:textColor="@color/brown"
+                        android:textSize="@dimen/profile_screen_text_size_extra_small" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/my_profile_year_btn"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_rectangle_border"
+                        android:text="@string/my_profile_screen_for_year"
+                        android:textColor="@color/brown"
+                        android:textSize="@dimen/profile_screen_text_size_extra_small" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="center" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/TextView.Black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/profile_screen_margin_large"
+                        android:text="@string/my_profile_screen_bottom_img_text"
+                        android:textSize="@dimen/profile_screen_text_size_small" />
+                </FrameLayout>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.core.widget.NestedScrollView>

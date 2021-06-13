@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="main_screen_bottom_nav_item_choose">Что выбрать?</string>
+    <string name="main_screen_bottom_nav_item_my_books">Мои книги</string>
+    <string name="main_screen_bottom_nav_item_profile">Профиль</string>
+    <string name="main_screen_bottom_nav_item_search">Поиск</string>
+    <string name="main_screen_books_tab_new_books">Новинки</string>
+    <string name="main_screen_books_tab_recommendations">Рекомендации на сегодня</string>
+    <string name="main_screen_books_tab_top_audio_books">Топ аудиокниг</string>
+    <string name="main_screen_books_tab_top_books">Топ книг</string>
+    <string name="main_screen_books_tab_free_books">Бесплатные</string>
+    <string name="main_screen_books_tab_label">Книги</string>
+    <string name="main_screen_audio_books_tab_label">Аудиокниги</string>
+</resources>

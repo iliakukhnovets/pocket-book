@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="subscribe_screen_standard_subscribe">Стандартная подписка</string>
+    <string name="subscribe_screen_premium_subscribe">Премиум подписка</string>
+    <string name="subscribe_screen_trial_fourteen_days">14 дней бесплатно</string>
+    <string name="subscribe_screen_trial_one_month">1 месяц</string>
+    <string name="subscribe_screen_premium">Премиум</string>
+    <string name="subscribe_screen_standard">Стандарт</string>
+    <string name="subscribe_screen_trial_one_year">12 месяцев</string>
+    <string name="subscribe_screen_trial_1_month_price">5$</string>
+    <string name="subscribe_screen_trial_1_year_price">50$</string>
+    <string name="subscribe_screen_description">При первом оформлении подписки вы получаете бесплатный
+        пробный период на 14 дней для чтения книг из стандартного каталога.
+
+        Если Вы не хотите оплачивать подписку, вы можете выключить автоматическое продление
+        за 24 часа до окончания пробного периода
+    </string>
+</resources>

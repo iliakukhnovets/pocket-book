@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="selected_category_app_bar_height">120dp</dimen>
+    <dimen name="selected_category_screen_margin_small">8dp</dimen>
+    <dimen name="selected_category_screen_margin_normal">10dp</dimen>
+    <dimen name="selected_category_screen_margin_large">20dp</dimen>
+</resources>
