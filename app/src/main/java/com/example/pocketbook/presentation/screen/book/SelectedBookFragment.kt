@@ -10,22 +10,9 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
 import com.example.pocketbook.R
 import com.example.pocketbook.data.NetworkClient
-import com.example.pocketbook.data.classes.book.SelectedBooksDataClass.Companion.SELECTED_BOOK_AGE_LIMIT_ARG
-import com.example.pocketbook.data.classes.book.SelectedBooksDataClass.Companion.SELECTED_BOOK_AUTHOR_ARG
-import com.example.pocketbook.data.classes.book.SelectedBooksDataClass.Companion.SELECTED_BOOK_DESCRIPTION_ARG
 import com.example.pocketbook.data.classes.book.SelectedBooksDataClass.Companion.SELECTED_BOOK_FACTS
-import com.example.pocketbook.data.classes.book.SelectedBooksDataClass.Companion.SELECTED_BOOK_IS_FINISHED_ARG
-import com.example.pocketbook.data.classes.book.SelectedBooksDataClass.Companion.SELECTED_BOOK_IS_RATED
-import com.example.pocketbook.data.classes.book.SelectedBooksDataClass.Companion.SELECTED_BOOK_LANGUAGE_ARG
 import com.example.pocketbook.data.classes.book.SelectedBooksDataClass.Companion.SELECTED_BOOK_MARKS_COUNT
-import com.example.pocketbook.data.classes.book.SelectedBooksDataClass.Companion.SELECTED_BOOK_MARKS_SUM
-import com.example.pocketbook.data.classes.book.SelectedBooksDataClass.Companion.SELECTED_BOOK_NAME_ARG
-import com.example.pocketbook.data.classes.book.SelectedBooksDataClass.Companion.SELECTED_BOOK_OBJECT_ID
-import com.example.pocketbook.data.classes.book.SelectedBooksDataClass.Companion.SELECTED_BOOK_RATING_ARG
 import com.example.pocketbook.data.classes.book.SelectedBooksDataClass.Companion.SELECTED_BOOK_SERIES_ARG
-import com.example.pocketbook.data.classes.book.SelectedBooksDataClass.Companion.SELECTED_BOOK_STYLE_ARG
-import com.example.pocketbook.data.classes.book.SelectedBooksDataClass.Companion.SELECTED_BOOK_SUBSCRIBE_ARG
-import com.example.pocketbook.data.classes.book.SelectedBooksDataClass.Companion.SELECTED_BOOK_URL_ARG
 import com.example.pocketbook.data.network.response.BookAuthorResponse
 import com.example.pocketbook.data.network.response.BookResponse
 import com.example.pocketbook.databinding.SelectedBookScreenBinding
@@ -94,24 +81,28 @@ class SelectedBookFragment : Fragment(), ItemListener<BookResponse> {
     }
 
     private fun initializeFields() {
-        bookUrl = getArgument(SELECTED_BOOK_URL_ARG) as String
-        isFinishedFlag = getArgument(SELECTED_BOOK_IS_FINISHED_ARG) as String
-        bookName = getArgument(SELECTED_BOOK_NAME_ARG) as String
-        bookAuthor = getArgument(SELECTED_BOOK_AUTHOR_ARG) as String
-        bookRating = getArgument(SELECTED_BOOK_RATING_ARG) as Int
-        bookMarkSum = getArgument(SELECTED_BOOK_MARKS_SUM) as Int
-        bookMarkCount = getArgument(SELECTED_BOOK_MARKS_COUNT) as Int
-        ageLimit = getArgument(SELECTED_BOOK_AGE_LIMIT_ARG) as String
-        bookSubscribe = getArgument(SELECTED_BOOK_SUBSCRIBE_ARG) as String
-        isRated = getArgument(SELECTED_BOOK_IS_RATED) as Boolean
-        bookAnnotation = getArgument(SELECTED_BOOK_DESCRIPTION_ARG) as String
-        bookStyle = getArgument(SELECTED_BOOK_STYLE_ARG) as String
-        bookLanguage = getArgument(SELECTED_BOOK_LANGUAGE_ARG) as String
-        if (getArgument(SELECTED_BOOK_FACTS) != null) {
-            bookFacts = (getArgument(SELECTED_BOOK_FACTS) as String).toString()
-        }
-        if (getArgument(SELECTED_BOOK_SERIES_ARG) != null) {
-            bookSeries = (getArgument(SELECTED_BOOK_SERIES_ARG) as String).toString()
+        val bundle = this.arguments
+        val model: BookResponse? = bundle?.getParcelable("bookData")
+        if (model != null) {
+            bookUrl = model.imageUrl
+            isFinishedFlag = model.isBookFinished
+            bookName = model.bookName
+            bookAuthor = model.bookAuthor
+            bookRating = model.bookRating
+            bookMarkSum = model.marksSum
+            bookMarkCount = model.marksCount
+            ageLimit = model.ageLimit
+            bookSubscribe = model.typeOfBookSubscribe
+            isRated = model.isRated
+            bookAnnotation = model.bookAnnotation
+            bookStyle = model.bookStyle
+            bookLanguage = model.bookLanguage
+            if (getArgument(SELECTED_BOOK_FACTS) != null) {
+                bookFacts = model.facts
+            }
+            if (getArgument(SELECTED_BOOK_SERIES_ARG) != null) {
+                bookSeries = model.bookSeries
+            }
         }
     }
 
